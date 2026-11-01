@@ -1,6 +1,6 @@
 <!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style><title>Buddyo</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Robot Buddyo, votre compagnon bien-être à la maison. Bientôt disponible.">
+<meta name="description" content="Robot Buddyo, votre compagnon IA à la maison : santé, nutrition, activité, sommeil, bien-être. Bientôt disponible.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap">
@@ -116,6 +116,13 @@ h1 em { font-style: normal; font-weight: 500; }
   color: var(--ivoire-dim);
   max-width: 32em;
 }
+.domains {
+  list-style: none; margin: -6px 0 0; padding: 0;
+  display: flex; flex-wrap: wrap; gap: 8px 22px;
+  font-size: clamp(16px, 1.25vw, 19px); font-weight: 400; color: var(--ivoire);
+}
+.domains li { display: inline-flex; align-items: center; gap: 9px; }
+.domains i { width: 8px; height: 8px; border-radius: 50%; background: var(--c); flex: none; }
 .contact {
   display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px;
   padding-top: 6px;
@@ -269,13 +276,21 @@ html[lang="en"] [lang-en] { display: revert; }
     <span class="eyebrow"><span class="dot" aria-hidden="true"></span><span lang-fr>Bientôt disponible</span><span lang-en>Coming soon</span></span>
 
     <h1>
-      <span lang-fr>Votre <em>compagnon bien-être</em>, à&nbsp;la&nbsp;maison.</span>
-      <span lang-en>Your <em>wellbeing companion</em>, at&nbsp;home.</span>
+      <span lang-fr>Votre <em>compagnon IA</em>, à&nbsp;la&nbsp;maison.</span>
+      <span lang-en>Your <em>AI companion</em>, at&nbsp;home.</span>
     </h1>
 
+    <ul class="domains" aria-label="Domaines">
+      <li><i style="--c:#E5484D"></i><span lang-fr>Santé</span><span lang-en>Health</span></li>
+      <li><i style="--c:#B8E04A"></i>Nutrition</li>
+      <li><i style="--c:#F5862B"></i><span lang-fr>Activité</span><span lang-en>Activity</span></li>
+      <li><i style="--c:#9B7BEA"></i><span lang-fr>Sommeil</span><span lang-en>Sleep</span></li>
+      <li><i style="--c:#4C9BF0"></i><span lang-fr>Bien-être</span><span lang-en>Wellbeing</span></li>
+    </ul>
+
     <p class="lede">
-      <span lang-fr>Robot Buddyo vous accompagne chaque jour pour prendre soin de vous&nbsp;: garder de bonnes habitudes, bien manger, bouger à votre rythme et rester en lien avec vos proches.</span>
-      <span lang-en>Robot Buddyo is with you every day to help you take care of yourself: keep good habits, eat well, move at your own pace and stay close to your loved ones.</span>
+      <span lang-fr>Grâce à l'IA, Robot Buddyo vous accompagne chaque jour pour prendre soin de vous&nbsp;: de bonnes habitudes, une alimentation équilibrée, de l'activité à votre rythme, un meilleur sommeil et le lien avec vos proches.</span>
+      <span lang-en>Powered by AI, Robot Buddyo is with you every day to help you take care of yourself: good habits, balanced eating, activity at your own pace, better sleep and staying close to your loved ones.</span>
     </p>
 
     <div class="contact">
